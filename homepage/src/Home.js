@@ -11,10 +11,10 @@ const Home = () => {
         fontFamily: 'system-ui, sans-serif',
       }}
     >
-      <h1 style={{ fontSize: '1.5rem', margin: '0 0 10px' }}>
+      <h1 style={{ fontSize: '1.5rem', margin: '0 0 10px', textAlign: 'center'}}>
         Lanz Aerol Ardenio
       </h1>
-      <p style={{ fontSize: '1rem', margin: 0 }}>
+      <p style={{ fontSize: '1rem', margin: 0, textAlign: 'center' }}>
         3rd Year Student
       </p>
     </div>

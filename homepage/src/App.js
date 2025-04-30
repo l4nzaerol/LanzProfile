@@ -12,8 +12,7 @@ function App() {
     <Router>
       <div style={appStyle}>
         <header style={headerStyle}>
-          <h1 style={titleStyle}>👨‍💻 My Developer Portfolio</h1>
-          <p style={subtitleStyle}></p>
+          <h1 style={titleStyle}>👨‍💻 Developer Portfolio</h1>
         </header>
 
         <nav style={navStyle}>
@@ -37,7 +36,7 @@ function App() {
         </main>
 
         <footer style={footerStyle}>
-          Lanz Aerol Ardenio | Built with ❤️ in React
+          <p>Lanz Aerol Ardenio | Built with ❤️ in React</p>
         </footer>
       </div>
     </Router>
@@ -45,86 +44,80 @@ function App() {
 }
 
 const appStyle = {
-  backgroundColor: '#f0f8ff',
+  background: 'linear-gradient(135deg, #f0f4f8, #d9e5f0)', // Gradient background for a smooth feel
   minHeight: '100vh',
-  fontFamily: 'Segoe UI, sans-serif',
+  fontFamily: 'Roboto, sans-serif', // Elegant font
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  padding: '1rem',
+  padding: '2rem',
 };
 
 const headerStyle = {
   textAlign: 'center',
-  marginBottom: '1rem',
+  marginBottom: '2rem',
 };
 
 const titleStyle = {
   fontSize: '2.5rem',
+  color: '#2a4365', // Dark blue for sophistication
   margin: 0,
-  color: '#1e3a8a',
-};
-
-const subtitleStyle = {
-  fontSize: '1.1rem',
-  color: '#555',
+  fontWeight: '700',
 };
 
 const navStyle = {
   backgroundColor: '#ffffff',
   borderRadius: '12px',
-  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
-  padding: '1rem 2rem',
+  padding: '1.2rem 2rem',
   marginBottom: '2rem',
   width: '100%',
-  maxWidth: '700px',
-  position: 'sticky',
-  top: 0,
-  zIndex: 1000,
+  maxWidth: '750px',
+  boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', // Light shadow for floating effect
 };
 
 const navListStyle = {
   display: 'flex',
-  justifyContent: 'space-around',
-  alignItems: 'center',
+  justifyContent: 'center',
   listStyleType: 'none',
-  margin: 0,
   padding: 0,
-  flexWrap: 'wrap',
-  gap: '1rem',
+  margin: 0,
+  gap: '1.8rem',
 };
 
 const navLinkStyle = {
   textDecoration: 'none',
-  color: '#1e40af',
+  color: '#2a4365',  // Dark blue text
   fontSize: '1.1rem',
   fontWeight: '500',
-  padding: '0.4rem 1rem',
+  padding: '0.6rem 1.4rem',
   borderRadius: '8px',
-  transition: 'all 0.3s ease',
+  transition: 'background-color 0.3s ease, transform 0.3s ease', // Smooth animation for hover
 };
 
 const navLinkHoverStyle = {
   ...navLinkStyle,
-  backgroundColor: '#1e40af',
+  backgroundColor: '#0066ff',
   color: '#ffffff',
+  transform: 'scale(1.05)', // Slight zoom effect on hover
 };
 
 const contentStyle = {
   backgroundColor: '#ffffff',
   padding: '2rem',
   borderRadius: '12px',
-  boxShadow: '0 6px 12px rgba(0, 0, 0, 0.1)',
+  boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)', // Soft shadow for depth
   width: '100%',
-  maxWidth: '900px',
-  marginBottom: '2rem',
+  maxWidth: '750px',
+  transition: 'all 0.3s ease', // Smooth transition for interactions
 };
 
 const footerStyle = {
   fontSize: '0.9rem',
-  color: '#777',
+  color: '#888',
   textAlign: 'center',
   marginTop: 'auto',
+  padding: '1rem',
+  borderTop: '1px solid #e2e8f0', // Thin border to separate footer
 };
 
 const NavLinkWithHover = ({ to, children }) => {
